@@ -5,6 +5,7 @@ import Footer from '../comps/footer'
 import Navbar from '../comps/navbar'
 import styles from '../styles/Home.module.css'
 
+
 export default function Home() {
   return (
     <div>
