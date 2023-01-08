@@ -1,3 +1,5 @@
+
+//获取指定的数据
 export const getStaticPaths = async() => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await res.json();
@@ -12,7 +14,7 @@ export const getStaticPaths = async() => {
         fallback: false
     }
 }
-
+//获取指定的数据,并显示获取到的数据
 export const getStaticProps = async (context) => {
     const id = context.params.id;
     const res = await fetch('https://jsonplaceholder.typicode.com/users/' + id);
